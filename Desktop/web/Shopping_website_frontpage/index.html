@@ -1,0 +1,768 @@
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7 ]>-->
+<html class="ie ie6" lang="en"> 
+<!--[if IE 7 ]>-->
+<html class="ie ie7" lang="en"> 
+
+<!--[if IE 8 ]>-->
+<html class="ie ie8" lang="en"> 
+<!-- else-->
+<html lang="en">
+
+<head>
+ 
+<!-- Meta Tag--> 
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="generator" content="" />
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<meta name="author" content="Kamlesh Gupta" />
+
+<title>Free Shopping-Site </title>
+<link rel="shortcut icon" sizes="192x192" type="image/png" href="images/logo.png">    
+
+<!-- Bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<!-- Font-Awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--Chrome, Firefox OS and Opera-->
+<meta name="theme-color" content="orange">
+<!--Windows Phone-->
+<meta name="msapplication-navbutton-color" content="orange">
+<!--iOS Safari-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="orange">
+
+<!--Custom CSS and JS-->
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/popup.js" ></script>
+<link rel="stylesheet" href="style.css" />
+    
+
+</head>
+
+
+
+<body>
+     <div class="popup gee-popup">
+		<div class="popup-inner">
+			<a class="close-button popup-close-button">
+				&times;
+			</a>
+			<div>
+		      <form style="text-align: center">
+                <span class="option" id="login">Sign In</span> 
+		       <span class="option" id="signup">Sign up</span>
+		      </form>
+		     <br />
+	       </div>
+		   <div class="login">
+             <form name="login" style="text-align: center">
+		       <input type="text" name="email" placeholder="username or email" id="name"><br>
+			   <input type="password" name="password" placeholder="password" id="password"><br>
+               <input type="submit" name="login" value="Sign In" id="log"> 
+		    </form>
+	       </div>
+		   <div class="signup" style="text-align: center">
+		     <form name="signup">
+			   <input type="text" name="fullname" placeholder="fullname" id="name"><br>
+               <input type="text" name="email" placeholder="email" id="name"><br>
+			   <input type="text" name="tel" placeholder="mobile" id="name"><br>
+               <input type="password" name="password" placeholder="password" id="password"><br>
+			   <input type="password" name="password" placeholder="confirm password" id="password"><br>
+               <input type="submit" value="Sign Up" id="log"> 
+		     </form>
+	       </div>
+		   <p class="txt1">Or login with</p>
+           <hr>
+           <div style="text-align: center">
+             <i id="fb" class="fa fa-facebook-f" style="font-size:21px;color:blue"></i>
+             <img id="goo" src="images/icon-google.png" alt="GOOGLE">
+           </div>
+		</div>
+	</div>
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color:orange;font-size:18px;">
+  <a class="navbar-brand" href="#" style="font-size:17px"><i class="fa fa-lock"></i> Login</a>
+  <a class="navbar-brand" href="#" style="font-size:17px"><i class="fa fa-lock"></i> Register</a>
+  <a class="navbar-brand" href="#" style="font-size:17px"><strong>Career with us</strong></a>
+  <a class="navbar-brand" href="#" style="font-size:22px"><i class="fa fa-shopping-cart"></i></a>
+  
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" style="width:400px;">               
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav ml-auto">
+			<li>
+				<a title="Facebook" href="#"><i class="fa fa-facebook"></i></a>
+			</li>
+			<li>
+				<a title="twitter" href="#"><i class="fa fa-twitter"></i></a>
+			</li>
+			<li>
+				<a title="Linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+			</li>
+			<li>
+				<a title="Google+" href=""><i class="fa fa-google-plus"></i></a>
+			</li>
+			<li>
+				<a title="Pinterest" href="#"><i class="fa fa-pinterest"></i></a>
+			</li>
+			<li>
+				<a title="Instagram" href="#"><i class="fa fa-instagram"></i></a>
+			</li>
+			<li>
+				<a title="Slideshare" href="#"><i class="fa fa-foursquare"></i></a>
+			</li>
+			<li>
+				<a title="Youtube" href="#"><i class="fa fa-youtube"></i></a>
+			</li>
+	    </ul>
+  </div>
+</nav>
+
+
+<div class="container-fluid" style="margin-top:50px;margin-left:50px;margin-bottom:5px;">
+<img src="images/shop.png">
+</div>
+
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/img13.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/img14.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/img15.jpg" alt="Third slide">
+    </div>
+	<div class="carousel-item">
+      <img class="d-block w-100" src="images/img16.jpg" alt="4 slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:orange;font-size:18px;">
+  <h5><a class="navbar-brand" href="#" style="font-size:17px">Today's Hot</a></h5>
+  <h5><a class="navbar-brand" href="#" style="font-size:17px">Home & Furniture</a></h5>
+  <h5><a class="navbar-brand" href="#" style="font-size:17px">Electronics & Appliances</a></h5>
+  <h5><a class="navbar-brand" href="#" style="font-size:17px">Brands</a></h5>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav ml-auto">
+			
+				<a href="#" class="collection">Men</a>
+			    <a href="#" class="collection">Women</a>
+				<a href="#" class="collection">Kids</a>
+			    <a href="#" class="collection">Home </a>
+		        <a href="#" class="collection">Men</a>
+				<a href="#" class="collection">Sports</a>
+			    <a href="#" class="collection">Men</a>
+		        <a href="#" class="collection">Men</a>
+				<a href="#" class="collection">Books</a>
+			     
+	    </ul>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+
+<h4> Header </h4>
+
+</div>
+
+
+
+<div class="container-fluid" style="margin-top:10px;">
+<div class="card-group">
+
+
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/mob1.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/mob2.jpg" /> </li>
+      </ul>
+    </div>
+	<div class="card-footer">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/mob3.jpg" /> </li>
+      </ul>
+    </div>
+	<div class="card-footer">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/mob4.jpg" /> </li>
+      </ul>
+    </div>
+	<div class="card-footer">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/mob5.jpg" /> </li>
+      </ul>
+    </div>
+	<div class="card-footer">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/mob6.jpg" /> </li>
+      </ul>
+    </div>
+	<div class="card-footer">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  
+</div>
+</div>
+
+
+<div class="container-fluid">
+
+<h4> Header </h4>
+
+</div>
+
+<div class="container-fluid" style="margin-top:10px;">
+<div class="card-group">
+
+
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/lap1.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/lap2.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/lap3.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/lap4.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/lap5.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/lap6.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  
+</div>
+</div>
+
+
+<div class="container-fluid">
+
+<h4> Header </h4>
+
+</div>
+
+
+<div class="container-fluid">
+<div class="card-group">
+
+
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/frz.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/ac.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/fan.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  
+</div>
+</div>
+
+
+<div class="container-fluid">
+
+<h4> Header </h4>
+
+</div>
+
+
+<div class="container-fluid">
+<div class="card-group">
+
+
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/shoe1.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/shoe2.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/shoe3.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/shoe4.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/shoe5.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/shoe6.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  
+</div>
+</div>
+
+<div id="carouselExampleFade2" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/img13.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/img14.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/img15.jpg" alt="Third slide">
+    </div>
+	<div class="carousel-item">
+      <img class="d-block w-100" src="images/img16.jpg" alt="4 slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleFade2" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleFade2" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+<div class="container-fluid">
+
+<h4> Header </h4>
+
+</div>
+
+
+<div class="container-fluid">
+<div class="card-group">
+
+
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/sar1.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/sar2.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/img18.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/sar3.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/sar4.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/sar5.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  
+</div>
+</div>
+
+
+<div class="container-fluid">
+
+<h4> Header </h4>
+
+</div>
+
+
+<div class="container-fluid">
+<div class="card-group">
+
+
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/bnd2.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/lap3.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  
+</div>
+</div>
+
+
+<div class="container-fluid">
+
+<h4> Header </h4>
+
+</div>
+
+
+<div class="container-fluid">
+<div class="card-group">
+
+
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/sar1.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/sar2.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/sar3.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/img18.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/sar4.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  <div class="card border-light mb-3">
+    <div class="card-body text-center">
+	  <ul class="grid-items">
+         <li>  <img src="images/sar5.jpg" /> </li>
+      </ul>
+    </div>
+    <div class="card-footer text-center">
+      <small class="text-muted">Product Info...</small>
+    </div>
+  </div>
+  
+</div>
+</div>
+
+
+
+<div class="container-fluid info">
+   <ul class="row">
+    
+	<div class="col-sm-4">
+	  <h6>GET TO KNOW US</h6>
+	  <br>
+	  <div><a href="#">About Us</a></div>
+      <div><a href="#">Our Team</a></div>
+      <div><a href="#">FAQ&#8217;S</a></div>
+      <div><a href="#">Testimonials</a></div>
+      <div><a href="#">Career With Us</a></div>
+      <div><a href="#">Media Contact</a></div>
+      <div><a href="#">Investors</a></div>
+      <div><a href="#">Contact Us</a></div>
+	</div>
+	
+	<div class="col-sm-4">
+	   <h6>SUPPORT</h6>
+	   <br>
+       <div><a href="#">Advertise With Us</a></div>
+       <div><a href="#">Campus Ambassador</a></div>
+       <div><a href="#">Feedback</a></div>
+       <div><a href="#">Win A Gift Cards</a></div>
+       <div><a href="#">Terms &#038; Conditions</a></div>
+       <div><a href="#">Privacy Policy</a></div>
+    </div>
+	
+	<div class="col-sm-4">
+       <h6>Never Miss Out Exclusive Deals !</h6>
+       <br>   
+	   <label>Email address: </label><br>
+	   <input type="email" name="EMAIL" placeholder="Your email address" required />
+	   <br><br>
+       <input type="submit" value="Sign up">
+  	</div>
+  </ul>
+</div>
+          
+<div class="container-fluid contact">
+   <p>Made with love from INDIA.<br>Freeshopping a division of sahu technologies<br>Copyright 2015-2020. Freeshopping. All Rights Reserved. All content, trademarks and logos are copyright of their respective owners.</p>
+   <ul>
+       <li>
+		   <a title="Facebook" href="#"><i class="fa fa-facebook"></i></a>
+	   </li>
+	   <li>
+		   <a title="twitter" href="#"><i class="fa fa-twitter"></i></a>
+	   </li>
+       <li>
+		   <a title="Linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+	   </li>
+	   <li>
+		   <a title="Google+" href=""><i class="fa fa-google-plus"></i></a>
+	   </li>
+	   <li>
+		   <a title="Pinterest" href="#"><i class="fa fa-pinterest"></i></a>
+	   </li>
+	   <li>
+		   <a title="Instagram" href="#"><i class="fa fa-instagram"></i></a>
+	   </li>
+	   <li>
+		   <a title="Slideshare" href="#"><i class="fa fa-foursquare"></i></a>
+	   </li>
+	   <li>
+		   <a title="Youtube" href="#"><i class="fa fa-youtube"></i></a>
+	   </li>
+   </ul>
+</div>
+
+
+<div  onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-circle-o-up" style="font-size:36px;color:orange;"></i></div>
+
+ <!-- Scroll Down pop up-->
+	<!-- JS -->
+		<script src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+		<!-- call the plugin -->
+		<script type="text/javascript">
+			$("html").jPopup({
+            });
+		</script>   	
+</body>
+</html>
