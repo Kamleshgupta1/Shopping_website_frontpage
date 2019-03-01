@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" type="text/css"  >
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <style>
+  marquee:hover{
+     transform:scaleX(-1);
+  }
+  </style> 
+	
+	
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <ul class=" nav navbar-nav" >
+        <li class="nav-item active"><a href="portfolio.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Resume</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#experience" class="nav-link"> Experience</a></li>
+        <li class="nav-item"><a href="#education" class="nav-link"> Education</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+	</ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Talk to me</a></li>
+    </ul>
+  </div>
+</nav>
+ <br>
+<section class="jumbotron" style="background-color:#ffe6e6;height:600px;">
+    <div class="row container-fluid" >
+      <div id="drib" class="col">
+            <img src="myphoto.png" class="rounded-circle img-fluid img-thumbnail" alt>
+      </div>
+      <div class="col shift">
+            <div>
+			     <h2>Kamlesh Gupta</h2>
+				 <h3>Studying at K.C. college of engineering</h3>
+            </div>
+		    <div style="display: inline;" >
+			<div class="circlebolck">
+                <div  class="circle1"><a style="display: table-cell;" class="circle-text1 btn btn-danger" href="resume.html"> MY RESUME</a> </div>
+                <div  class="circle2"><a style="display: table-cell;" class="circle-text2 btn btn-info" href="resume.html#work"> MY WORK </a></div>
+                <div  class="circle3"><a style="display: table-cell;" class="circle-text3 btn btn-warning" href="resume.html#skill"> MY SKILLS</a></div>
+            </div>
+			</div>
+	  </div>
+    </div>  
+    <marquee dir="right" behavior="alternate" onmouseover="this.stop();" onmouseout="this.start()"> <a href="resume.pdf" download="resume.pdf"> <button type="button" class="btn btn-primary" style="background-color: #786DD1; margin-top: 20px;" ><i class="fa fa-download" style="color: black;"></i><strong style="color:black;">Download Resume</strong></button></a></marquee>
+</section>
+
+<a  id="about"> 
+<section class="jumbotron" style="background-color: aqua;height-top:1880px;">
+    <div class="intro">
+        <h2 style="text-align:center;">ABOUT ME</h2>
+        <p>&nbsp Hi,<br> &nbsp &nbsp &nbsp I,Kamlesh Gupta am studying at K.C. College of engineering.
+		   Currently I am in third year.
+           I am versed in front-end and back-end development. I also know C language and JAVA language as well as Python.
+		   I started learning Android development.
+           I am fond of learning different kind of language and love new technology.
+           		   </p>
+    </div>
+</section>
+</a>
+<a  id="contact"> 
+<section class="about jumbotron" style="background-color: orchid;">
+    <div class="intro">
+        <h2 style="text-align:center;">CONTACT</h2>
+        <h6 align="middle">Kamlesh Gupta<br><br>Miraroad(E),Thane-401104<br></h6>
+    </div>
+</section>
+</a>
+
+<div class="jumbotron" style="background-color:#f20d0d;"> 
+    <div align="middle"><div class="row">
+        <div class="col-md-4">  <div class="pad"> <strong><h3>Call</h3></strong><i class="fa fa-phone" style="font-size:36px;color:white"></i>    
+         <p style="padding-left: 1.5em;">M:+91-98333 95359</p></div></div>
+         <div class="col-md-4"> <div class="pad" style="float: left;"><h3>Follow me</h3>
+            <p style="padding-left: 2em;"><a href="#"><i class="fa fa-facebook" style="font-size:36px;color:white;"></i></a>&nbsp &nbsp <a href="#"><i class="fa fa-instagram" style="font-size:36px;color:white"></i></a> &nbsp &nbsp  <a href="#"><i class="fa fa-google-plus" style="font-size:36px;color:white;"></i></a>&nbsp &nbsp <a href="https://www.linkedin.com/in/bhagwan-katkar-56230798/"><i class="fa fa-linkedin" style="font-size:36px;color:white"></i></a></p></div></div>
+            <div class="col-md-4">  <div class="pad"> <i class="fa fa-copyright" style="font-size:36px;color:white"></i>  <h4>&copy;2018 proudly </h4>
+                <p style="padding-left: 2em;"> created by Kamlesh Gupta</p></div></div>
+            </div>                                             
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

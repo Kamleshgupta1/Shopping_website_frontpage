@@ -1,0 +1,67 @@
+
+div {
+    display: block;
+}
+
+
+.rounded-circle {
+    border-radius: 50%!important;
+}
+.circle1 {
+    float: left;
+    position: relative;
+    margin-right: 90px;
+    margin-top: 50px;
+    text-decoration: none;
+}
+.circle2 {
+    float: left;
+    position: relative;
+    margin-right: 90px;
+    margin-top: 50px;
+}
+.circle3 {
+    float: left;
+    position: relative;
+    margin-right: 90px;
+    margin-top: 50px;
+}
+.circle-text3 {
+    height: 120px;
+    width: 120px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: #D1C926;
+    color: #fff;
+    border-radius: 50%!important;
+}
+.circle-text2 {
+    height: 120px;
+    width: 120px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: #61D0D4;
+    color: #fff;
+	border-radius: 50%!important;
+}
+.circle-text1 {
+    height: 120px;
+    width: 120px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: #E83556;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%!important;
+}
+.jumbotron {
+    padding:4rem 2rem;
+    margin-bottom:2rem;
+}
+
+a:hover{
+	color:#00ff00;
+}
